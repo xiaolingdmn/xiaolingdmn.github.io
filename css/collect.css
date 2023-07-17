@@ -26,6 +26,7 @@
 .home_page .home_content .home_card_list .home_site_item {
   width: 230px;
   height: 40px;
+  list-style: none;
 }
 .home_page .home_content .home_card_list .home_site_item a {
   align-items: center;

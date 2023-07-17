@@ -5,8 +5,8 @@
   
   <entry>
     <title>认识 Hexo</title>
-    <link href="/2023/06/01/intro/"/>
-    <url>/2023/06/01/intro/</url>
+    <link href="/2023/06/01/intro/intro/"/>
+    <url>/2023/06/01/intro/intro/</url>
     
     <content type="html"><![CDATA[<h2 id="什么是-Hexo-？"><a href="#什么是-Hexo-？" class="headerlink" title="什么是 Hexo  ？"></a>什么是 Hexo  ？</h2><p>  Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><span id="more"></span><h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>  安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li><a href="https://nodejs.org/en">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li><li><a href="https://git-scm.com/">Git</a></li></ul><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！你可以直接前往 安装 Hexo 步骤。</p><p>如果您的电脑中尚未安装所需要的程序，请自行 <a href="https://www.baidu.com/">百度</a> 查看安装过程</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>  所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。     </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs javascript">npm install -g hexo-cli<br></code></pre></td></tr></table></figure><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript">hexo init &lt;文件名&gt;<br>cd 文件名<br>npm install<br>npm run  server<br></code></pre></td></tr></table></figure><p>  如果您在使用过程中遇到问题，请查看 <a href="https://hexo.io/zh-cn/docs/">官方网站</a></p>]]></content>
     
