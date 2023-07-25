@@ -41,9 +41,15 @@
   transform: scale(1.1);
   text-decoration: none;
 }
-.home_page .home_content .home_card_list .home_site_item a img {
+.home_page .home_content .home_card_list .home_site_item a .pic {
   width: 20px;
   height: 20px;
+  margin-right: 5px;
+}
+.home_page .home_content .home_card_list .home_site_item a .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 .home_page .home_content .home_card_list .home_site_item a span {
   color: #a3a3a3;

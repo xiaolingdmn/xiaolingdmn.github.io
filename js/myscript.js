@@ -235,7 +235,9 @@ collectList.forEach(item => {
         title='${i.siteText}'
         target="_blank"
       >
-        <img class="mr-10 d-inline-block" src='${i.sitePic}'  />
+        <div class="pic">
+            <img class="mr-10 d-inline-block" src='${i.sitePic}'  />
+        </div>
         <span> ${i.siteName}
         </span>
       </a>
