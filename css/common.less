@@ -1,0 +1,58 @@
+.fun(@i) when(@i <=50) {
+    .font-@{i} {
+        font-size: @i + 0px;
+    }
+
+    .mt-@{i} {
+        margin-top: @i + 0px;
+    }
+
+    .mb-@{i} {
+        margin-bottom: @i + 0px;
+    }
+
+    .ml-@{i} {
+        margin-left: @i + 0px;
+    }
+
+    .mr-@{i} {
+        margin-right: @i + 0px;
+    }
+
+    .pt-@{i} {
+        padding-top: @i + 0px;
+    }
+
+    .pb-@{i} {
+        padding-bottom: @i + 0px;
+    }
+
+    .pl-@{i} {
+        padding-left: @i + 0px;
+    }
+
+    .pr-@{i} {
+        padding-right: @i + 0px;
+    }
+
+    .fun((@i+1));
+}
+
+.fun(1);
+
+/*隐藏*/
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
