@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>11. 盛最多水的容器</title>
+    <link href="/2023/12/21/aloi/aloi/"/>
+    <url>/2023/12/21/aloi/aloi/</url>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><span id="more"></span><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><pre><code class="hljs">给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。返回容器可以储存的最大水量。说明：你不能倾斜容器。</code></pre><h2 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h2><p><img src="/images/question/question_11.jpg" alt="示例1"></p><div class="note note-info">            <p>输入：[1,8,6,2,5,4,8,3,7]<br>输出：49<br>解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</p>          </div><h2 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h2><div class="note note-info">            <p>输入：height &#x3D; [1,1]<br>输出：1</p>          </div><h2 id="答题"><a href="#答题" class="headerlink" title="答题"></a>答题</h2><p>看到题目的第一反应是双循环  根据题意 较小的值 乘以相距的距离可以得到面积（也就是蓄水量） 但后续好像不知道该怎么去移动因为循环是同步进行的 无法停止移动较小的那个值  PASS</p><p>后来仔细想了一下 得出思路好像可以一个循环 从两端往中间移动  然后移动较小的那个值  因为较大的值并不会影响面积大小 然后每次移动都与上一次面积比较 最终得出最大面积为多少 也就是最大蓄水量为多少  </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs JS"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> *  </span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">number []</span>&#125; <span class="hljs-variable">arr</span></span><br><span class="hljs-comment"> * <span class="hljs-doctag">@returns</span>  &#123;<span class="hljs-type">number</span>&#125;  </span><br><span class="hljs-comment"> * </span><br><span class="hljs-comment"> */</span><br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">WaterS</span>(<span class="hljs-params">arr = []</span>) &#123;<br>    <span class="hljs-keyword">const</span> length = arr.<span class="hljs-property">length</span>;<br>    <span class="hljs-keyword">let</span> left = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">let</span> right = arr.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">let</span> sh = <span class="hljs-number">0</span><br>    <span class="hljs-comment">// try catch 为了捕获非数组异常场景 </span><br>    <span class="hljs-keyword">try</span> &#123;<br>        <span class="hljs-keyword">if</span> (!length || !<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(arr)) &#123;<br>            <span class="hljs-keyword">throw</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;当前数组为空或者数据不规范&#x27;</span>)<br>        &#125;<br>        <span class="hljs-comment">// 以下为关键代码</span><br>        <span class="hljs-keyword">while</span> (left &lt; right) &#123;<br>            <span class="hljs-keyword">const</span> leftdH = arr[left];<br>            <span class="hljs-keyword">const</span> rightH = arr[right];<br>            <span class="hljs-keyword">let</span> curSH = leftdH &lt; rightH ? (right - left) * arr[left++] : (right - left) * arr[right--]<br>            sh = sh &gt; curSH ? sh : curSH<br>        &#125;<br>        <span class="hljs-keyword">return</span> sh<br>    &#125; <span class="hljs-keyword">catch</span> (error) &#123;<br>        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;error---&#x27;</span>, error)<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> hArr = [<span class="hljs-number">1</span>, <span class="hljs-number">8</span>, <span class="hljs-number">6</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>]<br><span class="hljs-keyword">const</span> result = <span class="hljs-title class_">WaterS</span>(hArr);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;===最终获得面积 &#x27;</span>, result);<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数组</tag>
+      
+      <tag>双指针</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>近况小结</title>
     <link href="/2023/07/23/daily/daily/"/>
     <url>/2023/07/23/daily/daily/</url>

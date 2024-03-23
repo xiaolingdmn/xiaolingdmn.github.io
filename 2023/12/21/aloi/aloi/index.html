@@ -16,23 +16,23 @@
   <meta name="author" content="Xiao Liu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="叮咚~~ 这是一份近期小结">
-<meta property="og:type" content="article">
-<meta property="og:title" content="近况小结">
-<meta property="og:url" content="https://xiaoliubeima/2023/07/23/daily/daily/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="11. 盛最多水的容器">
+<meta property="og:url" content="https://xiaoliubeima/2023/12/21/aloi/aloi/index.html">
 <meta property="og:site_name" content="xiaolingdmn">
-<meta property="og:description" content="叮咚~~ 这是一份近期小结">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-23T15:04:00.000Z">
-<meta property="article:modified_time" content="2024-03-21T09:34:29.685Z">
+<meta property="og:image" content="https://xiaoliubeima/images/question/question_11.jpg">
+<meta property="article:published_time" content="2023-12-20T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-03-23T08:07:18.461Z">
 <meta property="article:author" content="Xiao Liu">
-<meta property="article:tag" content="小结">
-<meta property="article:tag" content="近况">
+<meta property="article:tag" content="数组">
+<meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xiaoliubeima/images/question/question_11.jpg">
   
   
   
-  <title>近况小结 ★ xiaolingdmn</title>
+  <title>11. 盛最多水的容器 ★ xiaolingdmn</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="近况小结"></span>
+            <span id="subtitle" data-typed-text="11. 盛最多水的容器"></span>
           
         </div>
 
@@ -231,8 +231,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-23 23:04" pubdate>
-          2023年7月23日 晚上
+        <time datetime="2023-12-21 00:00" pubdate>
+          2023年12月21日 凌晨
         </time>
       </span>
     
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          695 字
+          1.1k 字
         
       </span>
     
@@ -254,7 +254,7 @@
         
         
         
-          6 分钟
+          10 分钟
         
       </span>
     
@@ -292,18 +292,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">近况小结</h1>
+            <h1 style="display: none">11. 盛最多水的容器</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="叮咚-这是一份近期小结"><a href="#叮咚-这是一份近期小结" class="headerlink" title="叮咚~~ 这是一份近期小结"></a>叮咚~~ 这是一份近期小结</h2><span id="more"></span>
+                <h2 id=""><a href="#" class="headerlink" title=""></a></h2><span id="more"></span>
 
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><pre><code class="hljs">给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
 
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>  生活上面的话最近好像又有一点点肥了，致力于嘴上的减肥行动从未停止过，嘴上一直有点焦虑。吃喝拉撒还是蛮正常的，唯一不足的感觉就是好像有点缺乏运动了，本来每周的游泳计划好像也因为种种原因，上周也没有去成，但是上周休息日也还是有运动滴，上周末的话有跟高中的老朋友一起去打了羽毛球，他还是那么猛，我跑两步就气喘吁吁，不行了。希望接下来的生活能过的好一些吧，尽量多运动运动吧。</p>
-<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>  工作的话最近好像也没有什么可聊的，基本上就是尽力做好本职工作吧，服从领导的工作安排，不过有一说一我的领导们都对我还挺不错的，在此还是衷心的感谢一下领导们的抬爱吧，然后的话就是技术学习方面的话，我好像已经很久很久没有更新过自己的技术了，最近也是慢慢的开始更新一下自己的技术吧，说是更新技术，不如说是熟悉一下目前流行的一些框架文档吧，毕竟咱也不是铁饭碗不，说不定哪天就不在这待了呢，还是得学习一下的，不过我好像一直以来都不太喜欢学习，但是吧没办法咯，世事难料嘛，希望接下来能更新一下自己的技术库吧，以备不时之需咯</p>
-<h2 id="个人"><a href="#个人" class="headerlink" title="个人"></a>个人</h2><p>  这个的话那确实是莫得办法咯，哈哈哈哈哈哈哈哈哈哈哈，自从去年发生一些不太友好的事情之后呢，过了这么久感觉好像也就那样吧，顺其自然咯，最近有认识到一些的朋友的朋友，经常一起玩游戏什么的，感觉还蛮不错的，对了之前有跟朋友聊过一起去干点别的事情看看怎么样，因为真的不想打工了，还有最最最重要的原因就是真的不想早起挤地铁了，好像找不到工作的意义，辛苦费也不是那么理想，不过鉴于目前所谓的大环境趋势，这个想法还处于萌芽期。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>  总的来说的目前就是一切还算是蛮正常的，希望接下来能变得更好一些吧</p>
+找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+
+返回容器可以储存的最大水量。
+
+说明：你不能倾斜容器。
+</code></pre>
+<h2 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h2><p><img src="/images/question/question_11.jpg" srcset="/images/loading.gif" lazyload alt="示例1"></p>
+<div class="note note-info">
+            <p>输入：[1,8,6,2,5,4,8,3,7]<br>输出：49<br>解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</p>
+          </div>
+
+<h2 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h2><div class="note note-info">
+            <p>输入：height &#x3D; [1,1]<br>输出：1</p>
+          </div>
+
+<h2 id="答题"><a href="#答题" class="headerlink" title="答题"></a>答题</h2><p>看到题目的第一反应是双循环  根据题意 较小的值 乘以相距的距离可以得到面积（也就是蓄水量） 但后续好像不知道该怎么去移动因为循环是同步进行的 无法停止移动较小的那个值  PASS</p>
+<p>后来仔细想了一下 得出思路好像可以一个循环 从两端往中间移动  然后移动较小的那个值  因为较大的值并不会影响面积大小 然后每次移动都与上一次面积比较 最终得出最大面积为多少 也就是最大蓄水量为多少  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs JS"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> *  </span><br><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">number []</span>&#125; <span class="hljs-variable">arr</span></span><br><span class="hljs-comment"> * <span class="hljs-doctag">@returns</span>  &#123;<span class="hljs-type">number</span>&#125;  </span><br><span class="hljs-comment"> * </span><br><span class="hljs-comment"> */</span><br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">WaterS</span>(<span class="hljs-params">arr = []</span>) &#123;<br>    <span class="hljs-keyword">const</span> length = arr.<span class="hljs-property">length</span>;<br>    <span class="hljs-keyword">let</span> left = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">let</span> right = arr.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">let</span> sh = <span class="hljs-number">0</span><br>    <span class="hljs-comment">// try catch 为了捕获非数组异常场景 </span><br>    <span class="hljs-keyword">try</span> &#123;<br>        <span class="hljs-keyword">if</span> (!length || !<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(arr)) &#123;<br>            <span class="hljs-keyword">throw</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;当前数组为空或者数据不规范&#x27;</span>)<br>        &#125;<br>        <span class="hljs-comment">// 以下为关键代码</span><br>        <span class="hljs-keyword">while</span> (left &lt; right) &#123;<br>            <span class="hljs-keyword">const</span> leftdH = arr[left];<br>            <span class="hljs-keyword">const</span> rightH = arr[right];<br>            <span class="hljs-keyword">let</span> curSH = leftdH &lt; rightH ? (right - left) * arr[left++] : (right - left) * arr[right--]<br>            sh = sh &gt; curSH ? sh : curSH<br>        &#125;<br>        <span class="hljs-keyword">return</span> sh<br>    &#125; <span class="hljs-keyword">catch</span> (error) &#123;<br>        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;error---&#x27;</span>, error)<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> hArr = [<span class="hljs-number">1</span>, <span class="hljs-number">8</span>, <span class="hljs-number">6</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>]<br><span class="hljs-keyword">const</span> result = <span class="hljs-title class_">WaterS</span>(hArr);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;===最终获得面积 &#x27;</span>, result);<br><br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -312,13 +328,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%AE%97%E6%B3%95/" class="category-chain-item">算法</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%B0%8F%E7%BB%93/">#小结</a>
+        <a href="/tags/%E6%95%B0%E7%BB%84/">#数组</a>
       
-        <a href="/tags/%E8%BF%91%E5%86%B5/">#近况</a>
+        <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">#双指针</a>
       
     </div>
   
@@ -330,8 +367,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>近况小结</div>
-      <div>https://xiaoliubeima/2023/07/23/daily/daily/</div>
+      <div>11. 盛最多水的容器</div>
+      <div>https://xiaoliubeima/2023/12/21/aloi/aloi/</div>
     </div>
     <div class="license-meta">
       
@@ -343,7 +380,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月23日</div>
+          <div>2023年12月21日</div>
         </div>
       
       
@@ -375,18 +412,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/12/21/aloi/aloi/" title="11. 盛最多水的容器">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">11. 盛最多水的容器</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/01/intro/intro/" title="认识 Hexo">
-                        <span class="hidden-mobile">认识 Hexo</span>
+                      <a href="/2023/07/23/daily/daily/" title="近况小结">
+                        <span class="hidden-mobile">近况小结</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
